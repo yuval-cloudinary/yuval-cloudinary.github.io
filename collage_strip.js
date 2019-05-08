@@ -1,6 +1,6 @@
 'use strict';
 function process_request() {
-    const xhr = createCORSRequest('GET', document.forms[0].dropbox_link.value,);
+    /* const xhr = createCORSRequest('GET', document.forms[0].dropbox_link.value,);
     if (!xhr) {
         throw new Error('CORS not supported');
     }
@@ -18,7 +18,7 @@ function process_request() {
     xhr.onerror = function () {
         console.log('There was an error!');
     };
-    return;
+    */
     const new_zip = new JSZip();
     JSZipUtils.getBinaryContent(document.forms[0].dropbox_link.value, function (err, data) {
         if (err) {
