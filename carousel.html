@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+	<meta name="robots" content="noindex, nofollow">
+    <script src="https://product-gallery.cloudinary.com/all.js"></script>
+</head>
+<body>
+    <div id="cloudinary-pdp-images"></div>
+
+    <script>
+        const myWidget = cloudinary.galleryWidget(
+        {
+    "container":"#cloudinary-pdp-images",
+    "cloudName":"dunelondon-prod-2",
+    "displayProps":{
+        "mode":"expanded",
+        "columns":3,
+        "spacing":32
+    },
+    "mediaAssets":[
+        {
+            "tag":"0079504510016511",
+            "mediaType":"image"
+        },
+        {
+            "tag":"0079504510016511",
+            "mediaType":"video"
+        },
+        {
+            "tag":"0079504510016511",
+            "mediaType":"spin"
+        }
+    ],
+    "carouselStyle":"none",
+    "videoProps":{
+        "controls":"play",
+        "autoplay":false
+    },
+    "zoomProps":{
+        "level":3,
+        "type":"inline",
+        "steps":3
+    },
+    "viewportBreakpoints":[
+      
+        {
+              "displayProps":{
+        "mode":"expanded",
+        "columns":1,
+        "spacing":32
+    },
+            "breakpoint":1024,
+            "navigation":"always",
+            "carouselStyle":"thumbnails",
+            "carouselLocation":"bottom",
+            "carouselOffset":10
+        }
+    ]
+}
+)
+myWidget.render()
+
+    </script>
+</body>
+</html>
